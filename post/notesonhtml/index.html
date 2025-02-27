@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.144.2">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NotesonHTML &middot; My New Hugo Site</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://vvzerovv.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://vvzerovv.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://vvzerovv.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://vvzerovv.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://vvzerovv.github.io/"><h1>My New Hugo Site</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://vvzerovv.github.io/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2025. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>NotesonHTML</h1>
+  <time datetime=2025-02-27T12:31:44&#43;0800 class="post-date">Thu, Feb 27, 2025</time>
+  <h2 id="html入门">HTML入门</h2>
+<ul>
+<li>
+<p>HTML(Hyper Text Markup Language)：超文本标记语言，用来描述网页的语言。</p>
+</li>
+<li>
+<p>HTML不是编程语言，是标记语言。</p>
+</li>
+<li>
+<p>所谓超文本，有2层含义：</p>
+<ul>
+<li>可以加入图片、声音动画、多媒体等内容(超越了文本限制)。</li>
+<li>还可以从一个文件跳转到另一个文件，与世界各地主机的文件连接(超级链接文本)。</li>
+</ul>
+</li>
+<li>
+<p>浏览器内核（渲染引擎）：负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。</p>
+</li>
+</ul>
+<h2 id="web标准的构成">Web标准的构成</h2>
+<p>主要包括结构(Structure)、表现(Presentation)和行为(Behavior)三个方面。</p>
+<ul>
+<li>结构：结构用于对网页元素进行整理和分类，现阶段主要学的是<code>HTML</code>。</li>
+<li>表现：表现用于设置网页元素的版式、颜色、大小等外观样式，主要指的是<code>css</code>。</li>
+<li>行为：行为是指网页模型的定义及交互的编写，现阶段主要学的是<code>Javascript</code></li>
+<li>Web标准提出的最佳体验方案：结构、样式、行为相分离。
+<ul>
+<li>结构写到<code>HTML</code>文件中，表现写到<code>css</code>文件中，行为写到<code>JavaScript</code>文件中。</li>
+</ul>
+</li>
+</ul>
+<h2 id="语法">语法</h2>
+<h3 id="标签关系">标签关系</h3>
+<p>并列：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span></code></pre></div><p>包含：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt; &lt;/<span style="color:#f92672">title</span>&gt;    
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span></code></pre></div><h3 id="基本结构">基本结构</h3>
+<p>每个网页都会有一个基本的结构标签（也称为骨架标签），页面内容也是在这些基本标签上书写。</p>
+<ul>
+<li>HTML标签：页面中最大的标签，我们称为根标签。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><ul>
+<li>文档的头部：注意在head标签中我们必须要设置的标签是title。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span></code></pre></div><ul>
+<li>文档的标题：让页面拥有一个属于自己的网页标题。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">title</span>&gt;&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span></code></pre></div><ul>
+<li>文档的主体：元素包含文档的所有内容，页面内容基本都是放到body里面的。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span></code></pre></div><ul>
+<li>
+<p><code>&lt;!DOCTYPE&gt;</code>标签：文档类型声明，告诉浏览器用哪种HTML版本来显示网页。</p>
+<p>Notice：</p>
+<ol>
+<li><code>&lt;!DOCTYPE&gt;</code>声明位于文档中的最前面的位置，处于<code>&lt;html&gt;</code>标签之前。</li>
+<li><code>&lt;!DOCTYPE&gt;</code>不是一个<code>HTML</code>标签。</li>
+</ol>
+</li>
+<li>
+<p>lang 语言种类：用来定义当前文档显示的语言。</p>
+<ul>
+<li>e.g. English</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><ul>
+<li>e.g. Chinese</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;zh-CN&#34;</span>&gt;&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>其实对于文档显示来说，定义成en的文档也可以显示中文，定义成zh-CN的文档也可以显示英文。</p>
+<p>这个属性对浏览器和搜索引擎是有作用的，可以要求翻译。</p>
+</li>
+<li>
+<p>charset 字符集：字符集(Character set)是多个字符的集合，以便计算机能够识别和存储各种文字。</p>
+<p>在<code>&lt;head&gt;</code>标签内，可以通过<code>&lt;meta&gt;</code>标签的<code>charset</code>属性来规定<code>HTML</code>文档应该使用哪种字符编码。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34; UTF-8&#34;</span> /&gt;
+</span></span></code></pre></div><p><code>charset</code>常用的值有： GB2312、BIG5、GBK和UTF-8，其中UTF-8也被称为万国码，基本包含了全世界所有国家需要用到的字符。</p>
+</li>
+<li>
+<p>语义标签：根据标签的语义，在合适的地方给一个最为合理的标签，可以让页面结构更清晰。</p>
+<ul>
+<li>
+<p>标题标签：<code>HTML</code>提供了6个等级的网页标题：<code>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</code>。h是<code>head</code>的缩写，意为头部、标题。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;一级标题&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span></code></pre></div><p>作为标题使用，依据重要性递减：一级&gt;二级&gt;&hellip;</p>
+<p>特点：</p>
+<ol>
+<li>加了标题的文字会变的加粗，字号也会依次变大。</li>
+<li>一个标题独占一行。</li>
+</ol>
+</li>
+<li>
+<p>段落标签：在<code>HTML</code>标签中，<code>&lt;p&gt;</code>标签用于定义段落，它可以将整个网页分为若干个段落。p是<code>paragraph</code>的缩写，意为段落。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;段落&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><p>特点：</p>
+<ol>
+<li>文本在一个段落中会根据浏览器窗口的大小自动换行。</li>
+<li>段落和段落之间保有空隙。</li>
+</ol>
+</li>
+<li>
+<p>换行标签：在<code>HTML</code>中，一个段落中的文字会从左到右依次排列，直到浏览器窗口的右端，然后才自动换行。如果希望某段文本强制换行显示，就需要使用换行标签<code>&lt;br/&gt;</code>。br是<code>break</code>的缩写，意为打断、换行。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;aaaa&lt;<span style="color:#f92672">br</span> /&gt;aaaaaaa&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><p>特点：</p>
+<ol>
+<li><code>&lt;br/&gt;</code>是个单标签。</li>
+<li><code>&lt;br/&gt;</code>标签只是简单地开始新的一行，跟段落不一样段落之间会插入一些垂直的间距。</li>
+</ol>
+</li>
+<li>
+<p>综合案例：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Document&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h1</span>&gt;水花61分伊戈达拉制胜抢断 西决勇士再胜开拓者总分2-0&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h4</span>&gt;数据统计：水花兄弟合砍61分&lt;/<span style="color:#f92672">h4</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;库里22投11中，三分14投4中，罚球11罚全中得到37分8篮板8助攻，职业生涯季后赛得分30+次数来到35次，超过哈登
+</span></span><span style="display:flex;"><span>        排名现役第3位，仅次于詹姆斯和杜兰特。&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;汤普森22投8中，三分8投4中得到24分3篮板2助攻，德拉蒙德格林得到16分10篮板7助攻5盖帽，凯文-鲁尼得到14分7
+</span></span><span style="display:flex;"><span>    篮板2助攻，今天勇士有7名替补出场。&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h4</span>&gt;兄弟对决升级：小库里给哥哥造成压力&lt;/<span style="color:#f92672">h4</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;库里兄弟是NBA历史上第一对在分区决赛相遇的兄弟。 在西决第1场中，小库里没有给哥哥造成压力，他出场19分钟， 7
+</span></span><span style="display:flex;"><span>    投1中只得到3分3篮板2助攻，在场期间输掉10分。&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;但在西决第2场中，小库里攻防两端都打出杰出的表现[全场送出4次抢断，包括直接抢断自己的哥哥库里，在防守端给
+</span></span><span style="display:flex;"><span>    库里造成了极大的困扰。&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;作者：&lt;<span style="color:#f92672">br</span> /&gt;2019-8-8&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div></li>
+<li>
+<p>文本格式化标签：粗体、斜体、删除线、下划线。突出重要性，比普通文字重要。</p>
+<ul>
+<li>
+<p>加粗：<code>&lt;strong&gt;&lt;/strong&gt;</code>或者<code>&lt;b&gt;&lt;/b&gt;</code>。更推荐使用<code>&lt;strong&gt;</code>标签加粗语义更强烈。</p>
+</li>
+<li>
+<p>倾斜：<code>&lt;em&gt;&lt;/em&gt;</code>或者<code>&lt;i&gt;&lt;/i&gt;</code>。更推荐使用<code>&lt;em&gt;</code>标签加粗语义更强烈。</p>
+</li>
+<li>
+<p>删除线：<code>&lt;del&gt;&lt;/del&gt;</code>或者<code>&lt;s&gt;&lt;/s&gt;</code>。更推荐使用<code>&lt;del&gt;</code>标签加粗语义更强烈。</p>
+</li>
+<li>
+<p>下划线：<code>&lt;ins&gt;&lt;/ins&gt;</code>或者<code>&lt;u&gt;&lt;/u&gt;</code>。更推荐使用<code>&lt;ins&gt;</code>标签加粗语义更强烈。</p>
+</li>
+<li>
+<p><code>&lt;div&gt;</code>和<code>&lt;span&gt;</code>标签：无语义，是一个盒子，用来装内容。</p>
+<ul>
+<li>特点：
+<ol>
+<li><code>&lt;div&gt;</code>标签用来布局，但是现在一行只能放一个<code>&lt;div&gt;</code>。 大盒子</li>
+<li><code>&lt;span&gt;</code>标签用来布局，一行上可以多个<code>&lt;span&gt;</code>。小盒子</li>
+</ol>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span>&gt;content&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">span</span>&gt;content&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>图像标签：在HTML标签中，<code>&lt;img&gt;</code>标签用于定义HTML页面中的图像。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;图像URL&#34;</span> /&gt;
+</span></span></code></pre></div><ul>
+<li>
+<p><code>src</code>是图像标签的<strong>必须属性</strong>，用于指定图像文件的路径和文件名。</p>
+</li>
+<li>
+<p>图像属性：</p>
+<ul>
+<li>src：图片路径。必须属性。指定图像文件的路径和文件名。</li>
+<li>alt：文本。替换文本：图像不能显示的时候显示的文字。</li>
+<li>title：文本。提示文本：鼠标放到图像上显示的文字。</li>
+<li>width：像素。设置图像的宽度。</li>
+<li>height：像素。设置图像的高度。</li>
+<li>border：像素。设置图像的边框粗细。</li>
+</ul>
+</li>
+<li>
+<p>特点：</p>
+<ol>
+<li>图像标签可以拥有多个属性，必须写在标签名的后面。</li>
+<li>属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。</li>
+<li>属性采取键值对的格式，即<code>key=&quot;value&quot;</code>的格式。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>超链接标签：<code>&lt;a&gt;</code>标签用于定义超链接，作用是从一个页面链接到另一个页面。a为<code>anchor</code>的缩写。</p>
+<ul>
+<li>
+<p>链接的语法格式</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;跳转目标&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;目标窗口的弹出方式&#34;</span>&gt; 文本或图像 &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><ul>
+<li>href(必须属性)：用于指定链接目标的<code>url</code>地址，当为标签应用<code>href</code>属性时，它就具有了超链接的功能。</li>
+<li>target：用于指定链接页面的打开方式，其中<code>_self</code>为默认值，<code>_blank</code>为在新窗口中打开方式。</li>
+</ul>
+</li>
+<li>
+<p>链接的分类</p>
+<ul>
+<li>
+<p>外部链接
+e.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.baidu.com&#34;</span>&gt; baidu &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div></li>
+<li>
+<p>内部链接
+e.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;index.html&#34;</span>&gt; baidu &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div></li>
+<li>
+<p>空链接
+e.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt; baidu &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div></li>
+<li>
+<p>下载链接：如果<code>href</code>里面地址是一个文件或者压缩包(.exe or .zip)，会下载这个文件。
+e.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;xxx.zip&#34;</span>&gt; baidu &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div></li>
+<li>
+<p>网页元素链接：在网页中的各种网页元素，如文本、图像、表格、音频、视频等都可以添加超链接。
+e.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.baidu.com&#34;</span>&gt; &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;img.jpg&#34;</span>&gt; &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div></li>
+<li>
+<p>锚点链接：点击后快速定位到页面中的某个位置</p>
+<ul>
+<li>在链接文本的href属性中，设置属性值为<code>#name</code>的形式，e.g.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#two&#34;</span>&gt;第2集&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><ul>
+<li>找到目标位置标签，里面添加一个<code>id</code>属性=刚才的<code>name</code>，e.g.```html</li>
+</ul>
+<!-- raw HTML omitted -->
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>注释和特殊字符</p>
+<ul>
+<li>
+<p>注释：注释以<code>&lt;!--</code>开头，以<code>--&gt;</code>结束。</p>
+<ul>
+<li>快捷键：<code>Ctrl + /</code></li>
+</ul>
+</li>
+<li>
+<p>特殊字符</p>
+<!-- raw HTML omitted -->
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>表格标签</p>
+<ul>
+<li>
+<p>基本语法</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">td</span>&gt; &lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>        ...
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">tr</span>&gt;  
+</span></span><span style="display:flex;"><span>    ...  
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">table</span>&gt;
+</span></span></code></pre></div><ol>
+<li><code>&lt;table&gt; &lt;/table&gt;</code>是用于定义表格的标签。</li>
+<li><code>&lt;tr&gt; &lt;/tr&gt;</code>标签用于定义表格中的行，必须嵌套在<code>&lt;table&gt; &lt;/table&gt;</code>标签中。</li>
+<li><code>&lt;td&gt; &lt;/td&gt;</code>用于定义表格中的单元格，必须嵌套在<code>&lt;tr&gt; &lt;/tr&gt;</code>标签中。td为table data缩写，指单元格内容。</li>
+</ol>
+</li>
+<li>
+<p>表头单元格标签：一般表头单元格位于表格的第一行或第一列，表头单元格里面的文本内容<strong>加粗居中</strong>显示。th为table head缩写。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">th</span>&gt; &lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>        ...
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">tr</span>&gt;  
+</span></span><span style="display:flex;"><span>    ...  
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">table</span>&gt;
+</span></span></code></pre></div></li>
+<li>
+<p>表格相关属性：一般通过<code>css</code>来设置。</p>
+<ul>
+<li><code>align</code>：left、center、right。规定表格相对周围元素的对齐方式。</li>
+<li><code>border</code>：1或&quot;&quot;。规定表格单元是否拥有边框，默认为&quot;&quot;，表示没有边框</li>
+<li><code>cellpadding</code>：像素值。规定单元边沿与其内容之间的空白，默认1像素。</li>
+<li><code>cellspacing</code>：像素值。规定单元格之间的空白，默认2像素。</li>
+<li><code>width</code>：像素值或百分比。规定表格的宽度。</li>
+</ul>
+</li>
+<li>
+<p>表格结构标签：在表格标签中分别用： <code>&lt;thead&gt;</code>标签表格的头部区域、<code>&lt;tbody&gt;</code>标签表格的主体区域这样可以更好的分清表格结构。</p>
+<ul>
+<li><code>&lt;thead&gt; &lt;/thead&gt;</code>：用于定义表格的头部。<code>&lt;thead&gt;</code> 内部必须拥有<code>&lt;tr&gt;</code>标签。一般是位于第一行。</li>
+<li><code>&lt;tbody&gt; &lt;/tbody&gt;</code>：用于定义表格的主体，主要用于放数据本体。</li>
+<li><code>&lt;thead&gt; &lt;/thead&gt;</code>和<code>&lt;tbody&gt; &lt;/tbody&gt;</code>都放在<code>&lt;table&gt; &lt;/table&gt;</code>内。</li>
+</ul>
+</li>
+<li>
+<p>合并单元格</p>
+<ul>
+<li>合并单元格方式：</li>
+</ul>
+<ol>
+<li>跨行合并：<code>rowspan=&quot;合并单元格个数&quot;</code>。最上侧单元格为目标单元格，在此单元格中写合并代码。</li>
+<li>跨列合并：<code>colspan=&quot;合并单元格个数&quot;</code>。最左侧单元格为目标单元格，在此单元格中写合并代码。
+<!-- raw HTML omitted --></li>
+</ol>
+<ul>
+<li>操作步骤：</li>
+</ul>
+<ol>
+<li>确定跨行还是跨列</li>
+<li>找到目标单元格，加入属性<code>合并方式=&quot;合并单元格个数&quot;</code></li>
+<li>删除多余的单元格。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>列表标签：用来布局，整齐整洁有序，可分三类：无序列表、有序列表、自定义列表。</p>
+<ul>
+<li>
+<p>无序列表：<code>&lt;ul&gt;</code>标签表示HTML页面中项目的无序列表，一般会以项目符号呈现列表项，而列表项使用<code>&lt;li&gt;</code>标签定义。无序列表的基本语法格式如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;列表项1&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;列表项2&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;列表项3&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span></code></pre></div><ol>
+<li>无序列表的各个列表项之间没有顺序级别之分，并列的。</li>
+<li><code>&lt;ul&gt;&lt;/ul&gt;</code>只能嵌套<code>&lt;li&gt;&lt;/li&gt;</code>，直接在<code>&lt;ul&gt;&lt;/ul&gt;</code>标签中输入其他标签或者文字的做法也是不被允许的。</li>
+<li><code>&lt;li&gt;&lt;/li&gt;</code>相当于一个容器，里面可以容纳所有元素，放所有的标签。</li>
+<li>无序列表会带有自己的样式属性，但在实际使用时，我们会使用<code>css</code>来设置。</li>
+</ol>
+</li>
+<li>
+<p>有序列表：<code>&lt;ol&gt;</code>标签表示HTML页面中项目的有序列表，列表排序以数字来显示，并且使用<code>&lt;li&gt;</code>标签定义列表项。有序列表的基本语法格式如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">ol</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;列表项1&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;列表项2&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;列表项3&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ol</span>&gt;
+</span></span></code></pre></div><ol>
+<li><code>&lt;ol&gt;&lt;/ol&gt;</code>中只能嵌套<code>&lt;li&gt;&lt;/li&gt;</code>，直接在<code>&lt;ol&gt;&lt;/ol&gt;</code>标签中输入其他标签或者文字的做法是不被允许的。</li>
+<li><code>&lt;li&gt;&lt;/li&gt;</code>相当于一个容器，可以容纳所有元素，放所有的标签。</li>
+<li>有序列表会带有自己的样式属性，但在实际使用时，我们会使用<code>css</code>来设置。`</li>
+</ol>
+</li>
+<li>
+<p>自定义列表：自定义列表常用于对术语或名词进行解释和描述，定义列表的列表项前没有任何项目符号。在HTML标签中，<code>&lt;dl&gt;</code>标签用于定义描述列表(或定义列表)，该标签会与<code>&lt;dt&gt; </code>(定义项目/名字)和<code>&lt;dd&gt;</code>(描述每一个项目/名字)一起使用。其基本语法如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">dl</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">dt</span>&gt;名词1&lt;/<span style="color:#f92672">dt</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">dd</span>&gt;名词1解释1&lt;/<span style="color:#f92672">dd</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">dd</span>&gt;名词1解释2&lt;/<span style="color:#f92672">dd</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">dl</span>&gt;
+</span></span></code></pre></div><ol>
+<li><code>&lt;dl&gt;&lt;/dl&gt;</code>中只能嵌套<code>&lt;dt&gt;&lt;/dt&gt;</code>和<code>&lt;dd&gt;&lt;/dd&gt;</code></li>
+<li><code>&lt;dt&gt;&lt;/dt&gt;</code>和<code>&lt;dd&gt;&lt;/dd&gt;</code>个数没有限制，通常一个<code>&lt;dt&gt;</code>对应多个<code>&lt;dd&gt;</code>。</li>
+<li><code>&lt;dt&gt;</code>和<code>&lt;dd&gt;</code>里可以容纳所有元素，放所有的标签。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>表单标签：用于和用户交互，收集用户信息、用户资料。一个完整的表单由<strong>表单域</strong>、<strong>表单控件</strong>和<strong>提示信息</strong>组成。</p>
+<ul>
+<li>
+<p>表单域；包含表单元素的区域。<code>&lt;form&gt;</code>标签用于定义表单域<code>&lt;form&gt;</code>会把它范围内的表单元素信息提交给服务器。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url地址&#34;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;提交方式&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;表单域名称&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    各种表单元素控件
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">form</span>&gt;
+</span></span></code></pre></div><ul>
+<li>属性
+<ul>
+<li>action：用于指定接收并处理表单数据的服务器程序的url地址。</li>
+<li>method：用于设置表单数据的提交方式，其取值为get或post。</li>
+<li>name：用于指定表单的名称，以区分同一个页面中的多个表单域。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>表单元素：允许用户在表单中输入或者选择的内容控件。</p>
+<ol>
+<li>
+<p><strong>input</strong>输入表单元素：<code>&lt;input&gt;</code>标签用于收集用户信息。在<code>&lt;input&gt;</code>标签中，包含一个<code>type</code>属性，根据不同的<code>type</code>属性值，输入字段拥有很多种形式(可以是文本字段、复选框、掩码后的文本控件、单选按钮、按钮等)。<code>&lt;input /&gt;</code>是<strong>单标签</strong>。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;属性值&#34;</span> /&gt;
+</span></span></code></pre></div><ul>
+<li>
+<p><code>type</code>属性值：</p>
+<ol>
+<li>button：定义可点击按钮(多数情况下，用于通过JavaScript启动脚本)，不提交表单域中的数据。</li>
+<li>checkbox：定义复选框。</li>
+<li>file：定义输入字段和“浏览”按钮，供文件上传。</li>
+<li>hidden：定义隐藏的输入字段。</li>
+<li>image：定义图像形式的提交按钮。</li>
+<li>password：定义密码字段。该字段中的字符被掩码。</li>
+<li>radio：定义单选按钮。</li>
+<li>reset：定义重置按钮。重置按钮会清除表单中的所有数据，回到默认状态。</li>
+<li>submit：定义提交按钮。提交按钮会把表单域中所有表单数据发送到服务器。</li>
+<li>text：定义单行的输入字段，用户可在其中输入文本。默认宽度为20个字符。</li>
+</ol>
+</li>
+<li>
+<p><code>name</code>属性：定义input元素的名称。<code>name</code>和<code>value</code>是每个表单元素都有的属性值，主要给后台人员使用。<code>name</code>是表单元素的名字，要求单选按钮和复选框要有相同的name值（radio（或者checkbox）如果是一组，我们必须给他们命名相同的名字）。</p>
+</li>
+<li>
+<p><code>value</code>属性：规定input元素的值。<code>name</code>和<code>value</code>是每个表单元素都有的属性值，主要给后台人员使用。可以默认显示信息。</p>
+</li>
+<li>
+<p><code>checked</code>属性：<code>checked=&quot;checked&quot;</code>，规定此input元素首次加载时应当被选中。<code>checked</code>属性主要针对单选按钮和复选框，主要作用是一打开界面，就默认选择其中某个表单元素。</p>
+</li>
+<li>
+<p><code>maxlength</code>属性：规定输入字段中的字符的最大长度。<code>maxlength</code>是用户可以输入的最多的字符数。</p>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><code>&lt;label&gt;</code>标签：为<code>input</code>元素定义标注(标签)。<code>&lt;label&gt;</code>标签用于绑定一个表单元素当点击<code>&lt;label&gt;</code>标签内的文本时，浏览器就会自动将焦点（光标）转到或者选择对应的表单元素上，用来增加用户体验。核心：<code>&lt;label&gt;</code>中的<code>for</code>属性的值和<code>&lt;input&gt;</code>中的<code>id</code>属性的值相同</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sex&#34;</span>&gt;male&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;radio&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sex&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sex&#34;</span> /&gt;
+</span></span></code></pre></div><ol start="2">
+<li>
+<p><strong>select</strong>下拉表单元素：<code>&lt;select&gt;</code>标签定义下拉列表。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">select</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">option</span>&gt; 选项1 &lt;/<span style="color:#f92672">option</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">option</span>&gt; 选项2 &lt;/<span style="color:#f92672">option</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">option</span>&gt; 选项3 &lt;/<span style="color:#f92672">option</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">select</span>&gt;
+</span></span></code></pre></div><ul>
+<li><code>&lt;select&gt;</code>中至少包含一对<code>&lt;option&gt;</code>。</li>
+<li>在<code>&lt;option&gt;</code>中定义<code>selected=&quot;selected&quot;</code>时，当前项即为默认选中项。</li>
+</ul>
+</li>
+<li>
+<p><strong>textarea</strong>文本域元素：当用户输入内容较多的情况下，我们就不能使用文本框表单了，此时我们可以使用<code>&lt;textarea&gt;</code>标签。<code>&lt;textarea&gt;</code>标签用于定义多行文本输入的控件。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">textarea</span> <span style="color:#a6e22e">rows</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3&#34;</span> <span style="color:#a6e22e">col</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;20&#34;</span>&gt;默认文本内容&lt;/<span style="color:#f92672">textarea</span>&gt;
+</span></span></code></pre></div><ul>
+<li>其中两个属性<code>rows=&quot;显示的行数&quot;</code>和<code>col=&quot;每行中的字符数&quot;</code>，在实际开发中不会使用，用<code>css</code>来调整大小。</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>HTML</code>查阅文档：<!-- raw HTML omitted -->w3c<!-- raw HTML omitted --></li>
+</ul>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

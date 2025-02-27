@@ -53,10 +53,113 @@
     <div class="posts">
 <article class="post">
   <h1 class="post-title">
+    <a href="https://vvzerovv.github.io/post/notesonhtml/">NotesonHTML</a>
+  </h1>
+  <time datetime="2025-02-27T12:31:44&#43;0800" class="post-date">Thu, Feb 27, 2025</time>
+  <h2 id="html入门">HTML入门</h2>
+<ul>
+<li>
+<p>HTML(Hyper Text Markup Language)：超文本标记语言，用来描述网页的语言。</p>
+</li>
+<li>
+<p>HTML不是编程语言，是标记语言。</p>
+</li>
+<li>
+<p>所谓超文本，有2层含义：</p>
+<ul>
+<li>可以加入图片、声音动画、多媒体等内容(超越了文本限制)。</li>
+<li>还可以从一个文件跳转到另一个文件，与世界各地主机的文件连接(超级链接文本)。</li>
+</ul>
+</li>
+<li>
+<p>浏览器内核（渲染引擎）：负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。</p>
+</li>
+</ul>
+<h2 id="web标准的构成">Web标准的构成</h2>
+<p>主要包括结构(Structure)、表现(Presentation)和行为(Behavior)三个方面。</p>
+<ul>
+<li>结构：结构用于对网页元素进行整理和分类，现阶段主要学的是<code>HTML</code>。</li>
+<li>表现：表现用于设置网页元素的版式、颜色、大小等外观样式，主要指的是<code>css</code>。</li>
+<li>行为：行为是指网页模型的定义及交互的编写，现阶段主要学的是<code>Javascript</code></li>
+<li>Web标准提出的最佳体验方案：结构、样式、行为相分离。
+<ul>
+<li>结构写到<code>HTML</code>文件中，表现写到<code>css</code>文件中，行为写到<code>JavaScript</code>文件中。</li>
+</ul>
+</li>
+</ul>
+<h2 id="语法">语法</h2>
+<h3 id="标签关系">标签关系</h3>
+<p>并列：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span></code></pre></div><p>包含：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt; &lt;/<span style="color:#f92672">title</span>&gt;    
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span></code></pre></div><h3 id="基本结构">基本结构</h3>
+<p>每个网页都会有一个基本的结构标签（也称为骨架标签），页面内容也是在这些基本标签上书写。</p>
+<ul>
+<li>HTML标签：页面中最大的标签，我们称为根标签。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><ul>
+<li>文档的头部：注意在head标签中我们必须要设置的标签是title。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span></code></pre></div><ul>
+<li>文档的标题：让页面拥有一个属于自己的网页标题。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">title</span>&gt;&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span></code></pre></div><ul>
+<li>文档的主体：元素包含文档的所有内容，页面内容基本都是放到body里面的。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span></code></pre></div><ul>
+<li>
+<p><code>&lt;!DOCTYPE&gt;</code>标签：文档类型声明，告诉浏览器用哪种HTML版本来显示网页。</p>
+<p>Notice：</p>
+<ol>
+<li><code>&lt;!DOCTYPE&gt;</code>声明位于文档中的最前面的位置，处于<code>&lt;html&gt;</code>标签之前。</li>
+<li><code>&lt;!DOCTYPE&gt;</code>不是一个<code>HTML</code>标签。</li>
+</ol>
+</li>
+<li>
+<p>lang 语言种类：用来定义当前文档显示的语言。</p>
+<ul>
+<li>e.g. English</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><ul>
+<li>e.g. Chinese</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;zh-CN&#34;</span>&gt;&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>其实对于文档显示来说，定义成en的文档也可以显示中文，定义成zh-CN的文档也可以显示英文。</p>
+<p>这个属性对浏览器和搜索引擎是有作用的，可以要求翻译。</p>
+</li>
+<li>
+<p>charset 字符集：字符集(Character set)是多个字符的集合，以便计算机能够识别和存储各种文字。</p>
+<p>在<code>&lt;head&gt;</code>标签内，可以通过<code>&lt;meta&gt;</code>标签的<code>charset</code>属性来规定<code>HTML</code>文档应该使用哪种字符编码。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34; UTF-8&#34;</span> /&gt;
+</span></span></code></pre></div><p><code>charset</code>常用的值有： GB2312、BIG5、GBK和UTF-8，其中UTF-8也被称为万国码，基本包含了全世界所有国家需要用到的字符。</p>
+</li>
+<li>
+<p>语义标签：根据标签的语义，在合适的地方给一个最为合理的标签，可以让页面结构更清晰。</p>
+<ul>
+<li>
+<p>标题标签：<code>HTML</code>提供了6个等级的网页标题：<code>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</code>。h是<code>head</code>的缩写，意为头部、标题。</p>
+  
+  <div class="read-more-link">
+    <a href="/post/notesonhtml/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
     <a href="https://vvzerovv.github.io/post/first/">First</a>
   </h1>
   <time datetime="2025-02-27T07:57:27&#43;0800" class="post-date">Thu, Feb 27, 2025</time>
-  <p>hello world</p>
+  <p>###hello world</p>
   
 </article>
 </div>
